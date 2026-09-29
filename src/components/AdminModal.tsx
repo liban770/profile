@@ -101,7 +101,7 @@ export const AdminModal: React.FC<AdminModalProps> = ({
       setAuthenticated(true);
       setAuthError('');
     } else {
-      setAuthError('Incorrect passkey. (Hint: liban2026)');
+      //    setAuthError('Incorrect passkey. (Hint: liban2026)');
     }
   };
 
@@ -353,7 +353,7 @@ export const AdminModal: React.FC<AdminModalProps> = ({
         ) : (
           /* Main Authenticated Admin Area */
           <div className="flex flex-col flex-1 overflow-hidden">
-            
+
             {/* Quick Metrics Bar (Tip #2) */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 px-6 py-3 bg-slate-950/80 border-b border-slate-800 text-xs font-mono">
               <div className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-between">
@@ -401,11 +401,10 @@ export const AdminModal: React.FC<AdminModalProps> = ({
             <div className="flex items-center gap-1 px-6 border-b border-slate-800 bg-slate-950/60 overflow-x-auto">
               <button
                 onClick={() => setActiveTab('messages')}
-                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${
-                  activeTab === 'messages'
+                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'messages'
                     ? 'border-blue-500 text-white font-bold'
                     : 'border-transparent text-slate-400 hover:text-slate-200'
-                }`}
+                  }`}
               >
                 <Mail className="w-3.5 h-3.5" />
                 <span>Messages ({messages.length})</span>
@@ -413,11 +412,10 @@ export const AdminModal: React.FC<AdminModalProps> = ({
 
               <button
                 onClick={() => setActiveTab('certifications')}
-                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${
-                  activeTab === 'certifications'
+                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'certifications'
                     ? 'border-blue-500 text-white font-bold'
                     : 'border-transparent text-slate-400 hover:text-slate-200'
-                }`}
+                  }`}
               >
                 <Award className="w-3.5 h-3.5" />
                 <span>Certificates ({certifications.length})</span>
@@ -425,11 +423,10 @@ export const AdminModal: React.FC<AdminModalProps> = ({
 
               <button
                 onClick={() => setActiveTab('projects')}
-                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${
-                  activeTab === 'projects'
+                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'projects'
                     ? 'border-blue-500 text-white font-bold'
                     : 'border-transparent text-slate-400 hover:text-slate-200'
-                }`}
+                  }`}
               >
                 <FolderKanban className="w-3.5 h-3.5" />
                 <span>Projects ({projects.length})</span>
@@ -437,11 +434,10 @@ export const AdminModal: React.FC<AdminModalProps> = ({
 
               <button
                 onClick={() => setActiveTab('profile')}
-                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${
-                  activeTab === 'profile'
+                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'profile'
                     ? 'border-blue-500 text-white font-bold'
                     : 'border-transparent text-slate-400 hover:text-slate-200'
-                }`}
+                  }`}
               >
                 <User className="w-3.5 h-3.5" />
                 <span>Profile & Bio</span>
@@ -449,11 +445,10 @@ export const AdminModal: React.FC<AdminModalProps> = ({
 
               <button
                 onClick={() => setActiveTab('skills')}
-                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${
-                  activeTab === 'skills'
+                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'skills'
                     ? 'border-blue-500 text-white font-bold'
                     : 'border-transparent text-slate-400 hover:text-slate-200'
-                }`}
+                  }`}
               >
                 <Wrench className="w-3.5 h-3.5" />
                 <span>Skills ({skills.length})</span>
@@ -461,11 +456,10 @@ export const AdminModal: React.FC<AdminModalProps> = ({
 
               <button
                 onClick={() => setActiveTab('database')}
-                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${
-                  activeTab === 'database'
+                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'database'
                     ? 'border-blue-500 text-white font-bold'
                     : 'border-transparent text-slate-400 hover:text-slate-200'
-                }`}
+                  }`}
               >
                 <Database className="w-3.5 h-3.5" />
                 <span>Database Status</span>
@@ -473,11 +467,10 @@ export const AdminModal: React.FC<AdminModalProps> = ({
 
               <button
                 onClick={() => setActiveTab('backup')}
-                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${
-                  activeTab === 'backup'
+                className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'backup'
                     ? 'border-blue-500 text-white font-bold'
                     : 'border-transparent text-slate-400 hover:text-slate-200'
-                }`}
+                  }`}
               >
                 <Download className="w-3.5 h-3.5" />
                 <span>Backup & Sync</span>
@@ -486,7 +479,7 @@ export const AdminModal: React.FC<AdminModalProps> = ({
 
             {/* Tab Panes */}
             <div className="p-6 overflow-y-auto space-y-4 flex-1">
-              
+
               {/* Tab 1: Messages */}
               {activeTab === 'messages' && (
                 <div className="space-y-3">
@@ -571,11 +564,10 @@ export const AdminModal: React.FC<AdminModalProps> = ({
                             <span className="font-bold text-white text-sm">{cert.title}</span>
                             <button
                               onClick={() => toggleCertVerification(cert.id)}
-                              className={`px-2 py-0.5 rounded text-[10px] font-mono flex items-center gap-1 border ${
-                                cert.verified
+                              className={`px-2 py-0.5 rounded text-[10px] font-mono flex items-center gap-1 border ${cert.verified
                                   ? 'bg-emerald-950/80 text-emerald-400 border-emerald-800'
                                   : 'bg-slate-800 text-slate-400 border-slate-700'
-                              }`}
+                                }`}
                             >
                               <ShieldCheck className="w-3 h-3" />
                               <span>{cert.verified ? 'Verified' : 'Unverified'}</span>
@@ -666,11 +658,10 @@ export const AdminModal: React.FC<AdminModalProps> = ({
                         <div className="flex items-center gap-2 self-end sm:self-center">
                           <button
                             onClick={() => togglePublishProject(p.id)}
-                            className={`px-2.5 py-1 text-xs font-mono rounded border flex items-center gap-1 transition-colors ${
-                              p.published
+                            className={`px-2.5 py-1 text-xs font-mono rounded border flex items-center gap-1 transition-colors ${p.published
                                 ? 'bg-emerald-950/60 text-emerald-300 border-emerald-800'
                                 : 'bg-slate-800 text-slate-400 border-slate-700'
-                            }`}
+                              }`}
                           >
                             {p.published ? <Eye className="w-3 h-3" /> : <EyeOff className="w-3 h-3" />}
                             <span>{p.published ? 'Published' : 'Hidden'}</span>
@@ -881,9 +872,8 @@ export const AdminModal: React.FC<AdminModalProps> = ({
                   <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-3">
                     <div className="flex items-center justify-between">
                       <span className="font-mono uppercase text-slate-400">Connection State:</span>
-                      <span className={`px-2 py-0.5 rounded font-mono ${
-                        isSupabaseConfigured ? 'bg-emerald-900 text-emerald-200' : 'bg-amber-900 text-amber-200'
-                      }`}>
+                      <span className={`px-2 py-0.5 rounded font-mono ${isSupabaseConfigured ? 'bg-emerald-900 text-emerald-200' : 'bg-amber-900 text-amber-200'
+                        }`}>
                         {isSupabaseConfigured ? 'Connected to Supabase' : 'Local Reactive Storage Active'}
                       </span>
                     </div>
