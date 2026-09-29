@@ -101,7 +101,7 @@ export const AdminModal: React.FC<AdminModalProps> = ({
       setAuthenticated(true);
       setAuthError('');
     } else {
-      //    setAuthError('Incorrect passkey. (Hint: liban2026)');
+      setAuthError('Incorrect passkey. (Hint: liban)');
     }
   };
 
@@ -335,7 +335,7 @@ export const AdminModal: React.FC<AdminModalProps> = ({
             <form onSubmit={handleLogin} className="space-y-3">
               <input
                 type="password"
-                placeholder="Enter passkey (default: liban2026)"
+                placeholder="Enter password"
                 value={passcode}
                 onChange={(e) => setPasscode(e.target.value)}
                 className="w-full px-3.5 py-2 text-sm bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-blue-500 text-center"
@@ -402,8 +402,8 @@ export const AdminModal: React.FC<AdminModalProps> = ({
               <button
                 onClick={() => setActiveTab('messages')}
                 className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'messages'
-                    ? 'border-blue-500 text-white font-bold'
-                    : 'border-transparent text-slate-400 hover:text-slate-200'
+                  ? 'border-blue-500 text-white font-bold'
+                  : 'border-transparent text-slate-400 hover:text-slate-200'
                   }`}
               >
                 <Mail className="w-3.5 h-3.5" />
@@ -413,8 +413,8 @@ export const AdminModal: React.FC<AdminModalProps> = ({
               <button
                 onClick={() => setActiveTab('certifications')}
                 className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'certifications'
-                    ? 'border-blue-500 text-white font-bold'
-                    : 'border-transparent text-slate-400 hover:text-slate-200'
+                  ? 'border-blue-500 text-white font-bold'
+                  : 'border-transparent text-slate-400 hover:text-slate-200'
                   }`}
               >
                 <Award className="w-3.5 h-3.5" />
@@ -424,8 +424,8 @@ export const AdminModal: React.FC<AdminModalProps> = ({
               <button
                 onClick={() => setActiveTab('projects')}
                 className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'projects'
-                    ? 'border-blue-500 text-white font-bold'
-                    : 'border-transparent text-slate-400 hover:text-slate-200'
+                  ? 'border-blue-500 text-white font-bold'
+                  : 'border-transparent text-slate-400 hover:text-slate-200'
                   }`}
               >
                 <FolderKanban className="w-3.5 h-3.5" />
@@ -435,8 +435,8 @@ export const AdminModal: React.FC<AdminModalProps> = ({
               <button
                 onClick={() => setActiveTab('profile')}
                 className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'profile'
-                    ? 'border-blue-500 text-white font-bold'
-                    : 'border-transparent text-slate-400 hover:text-slate-200'
+                  ? 'border-blue-500 text-white font-bold'
+                  : 'border-transparent text-slate-400 hover:text-slate-200'
                   }`}
               >
                 <User className="w-3.5 h-3.5" />
@@ -446,8 +446,8 @@ export const AdminModal: React.FC<AdminModalProps> = ({
               <button
                 onClick={() => setActiveTab('skills')}
                 className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'skills'
-                    ? 'border-blue-500 text-white font-bold'
-                    : 'border-transparent text-slate-400 hover:text-slate-200'
+                  ? 'border-blue-500 text-white font-bold'
+                  : 'border-transparent text-slate-400 hover:text-slate-200'
                   }`}
               >
                 <Wrench className="w-3.5 h-3.5" />
@@ -457,8 +457,8 @@ export const AdminModal: React.FC<AdminModalProps> = ({
               <button
                 onClick={() => setActiveTab('database')}
                 className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'database'
-                    ? 'border-blue-500 text-white font-bold'
-                    : 'border-transparent text-slate-400 hover:text-slate-200'
+                  ? 'border-blue-500 text-white font-bold'
+                  : 'border-transparent text-slate-400 hover:text-slate-200'
                   }`}
               >
                 <Database className="w-3.5 h-3.5" />
@@ -468,8 +468,8 @@ export const AdminModal: React.FC<AdminModalProps> = ({
               <button
                 onClick={() => setActiveTab('backup')}
                 className={`py-3 px-3 text-xs font-mono font-medium border-b-2 transition-colors flex items-center gap-1.5 whitespace-nowrap ${activeTab === 'backup'
-                    ? 'border-blue-500 text-white font-bold'
-                    : 'border-transparent text-slate-400 hover:text-slate-200'
+                  ? 'border-blue-500 text-white font-bold'
+                  : 'border-transparent text-slate-400 hover:text-slate-200'
                   }`}
               >
                 <Download className="w-3.5 h-3.5" />
@@ -565,8 +565,8 @@ export const AdminModal: React.FC<AdminModalProps> = ({
                             <button
                               onClick={() => toggleCertVerification(cert.id)}
                               className={`px-2 py-0.5 rounded text-[10px] font-mono flex items-center gap-1 border ${cert.verified
-                                  ? 'bg-emerald-950/80 text-emerald-400 border-emerald-800'
-                                  : 'bg-slate-800 text-slate-400 border-slate-700'
+                                ? 'bg-emerald-950/80 text-emerald-400 border-emerald-800'
+                                : 'bg-slate-800 text-slate-400 border-slate-700'
                                 }`}
                             >
                               <ShieldCheck className="w-3 h-3" />
@@ -659,8 +659,8 @@ export const AdminModal: React.FC<AdminModalProps> = ({
                           <button
                             onClick={() => togglePublishProject(p.id)}
                             className={`px-2.5 py-1 text-xs font-mono rounded border flex items-center gap-1 transition-colors ${p.published
-                                ? 'bg-emerald-950/60 text-emerald-300 border-emerald-800'
-                                : 'bg-slate-800 text-slate-400 border-slate-700'
+                              ? 'bg-emerald-950/60 text-emerald-300 border-emerald-800'
+                              : 'bg-slate-800 text-slate-400 border-slate-700'
                               }`}
                           >
                             {p.published ? <Eye className="w-3 h-3" /> : <EyeOff className="w-3 h-3" />}
