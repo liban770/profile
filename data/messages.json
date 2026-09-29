@@ -1,0 +1,29 @@
+[
+  {
+    "id": "msg_1790577188489",
+    "name": "Test User",
+    "email": "test@example.com",
+    "subject": "Test Inbound",
+    "message": "Hello Admin Console!",
+    "createdAt": "2026-09-28T06:33:08.489Z",
+    "read": false
+  },
+  {
+    "id": "msg_1790573947612",
+    "name": "ahmed",
+    "email": "a@gmail.com",
+    "subject": "enginer",
+    "message": "hello in aad wacan tahay baan rajeynayaa",
+    "createdAt": "2026-09-28T05:39:07.612Z",
+    "read": false
+  },
+  {
+    "id": "msg_1790484859140",
+    "name": "Test Recruiter",
+    "email": "recruiter@example.com",
+    "subject": "Software Engineer Role",
+    "message": "Hello Ahmed, we would like to interview you for a Senior Software Engineer position.",
+    "createdAt": "2026-09-27T04:54:19.140Z",
+    "read": false
+  }
+]
